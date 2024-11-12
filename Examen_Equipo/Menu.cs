@@ -15,6 +15,7 @@ namespace Examen_Equipo
         public Menu()
         {
             InitializeComponent();
+            //YO
         }
     }
 }
