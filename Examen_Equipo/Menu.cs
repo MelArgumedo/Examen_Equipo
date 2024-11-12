@@ -17,5 +17,26 @@ namespace Examen_Equipo
             InitializeComponent();
             //YO
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contenidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contenidoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Clientes clientes = new Clientes();
+            clientes.Show();
+        }
     }
 }
