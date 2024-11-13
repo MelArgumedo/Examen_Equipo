@@ -11,8 +11,8 @@ namespace Examen_Equipo
 {
     internal class Datos
     {
-        String cadenaConexion =@"Data Source=DESKTOP-H69TC9M\SQLEXPRESS;
-            Integrated Security=true;initial catalog=Agenda";
+        String cadenaConexion = @"Data Source=MELARGUMEDO;
+            Integrated Security=true;initial catalog=Northwind";
 
         SqlConnection conexion;
 
@@ -47,7 +47,7 @@ namespace Examen_Equipo
 
         }
 
-        public bool ejecutarABC(String comando)
+        public bool ejecutar(String comando)
         {
             try
             {

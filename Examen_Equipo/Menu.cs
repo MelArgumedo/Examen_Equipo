@@ -38,5 +38,24 @@ namespace Examen_Equipo
             Clientes clientes = new Clientes();
             clientes.Show();
         }
+
+        private void categoriasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmCategorias categorias = new frmCategorias();
+            categorias.Show();
+        }
+
+        private void detallesDelPedidoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmDetallesPedido detallesPedido = new frmDetallesPedido();
+            detallesPedido.Show();
+        }
+
+        private void demografiaDelClienteToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmDemografiaCliente demografiaCliente = new frmDemografiaCliente();
+                demografiaCliente.Show();
+
+        }
     }
 }

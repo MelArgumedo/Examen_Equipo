@@ -103,6 +103,7 @@
             categoriasToolStripMenuItem2.Name = "categoriasToolStripMenuItem2";
             categoriasToolStripMenuItem2.Size = new Size(216, 22);
             categoriasToolStripMenuItem2.Text = "Categorias";
+            categoriasToolStripMenuItem2.Click += categoriasToolStripMenuItem2_Click;
             // 
             // productosToolStripMenuItem2
             // 
@@ -121,6 +122,7 @@
             demografiaDelClienteToolStripMenuItem2.Name = "demografiaDelClienteToolStripMenuItem2";
             demografiaDelClienteToolStripMenuItem2.Size = new Size(216, 22);
             demografiaDelClienteToolStripMenuItem2.Text = "Demografia del cliente";
+            demografiaDelClienteToolStripMenuItem2.Click += demografiaDelClienteToolStripMenuItem2_Click;
             // 
             // clientesToolStripMenuItem2
             // 
@@ -146,6 +148,7 @@
             detallesDelPedidoToolStripMenuItem2.Name = "detallesDelPedidoToolStripMenuItem2";
             detallesDelPedidoToolStripMenuItem2.Size = new Size(216, 22);
             detallesDelPedidoToolStripMenuItem2.Text = "Detalles del pedido";
+            detallesDelPedidoToolStripMenuItem2.Click += detallesDelPedidoToolStripMenuItem2_Click;
             // 
             // regionToolStripMenuItem1
             // 
