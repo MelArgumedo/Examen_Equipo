@@ -161,6 +161,7 @@
             transportistasToolStripMenuItem2.Name = "transportistasToolStripMenuItem2";
             transportistasToolStripMenuItem2.Size = new Size(216, 22);
             transportistasToolStripMenuItem2.Text = "Transportistas";
+            transportistasToolStripMenuItem2.Click += transportistasToolStripMenuItem2_Click;
             // 
             // proveedoresToolStripMenuItem
             // 

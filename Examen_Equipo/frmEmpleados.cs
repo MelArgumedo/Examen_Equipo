@@ -419,6 +419,7 @@ namespace Examen_Equipo
             txtLastName.Name = "txtLastName";
             txtLastName.Size = new Size(100, 23);
             txtLastName.TabIndex = 1;
+            txtLastName.TextChanged += txtLastName_TextChanged;
             // 
             // label1
             // 
@@ -468,6 +469,11 @@ namespace Examen_Equipo
         }
 
         private void frmEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLastName_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -11,7 +11,7 @@ namespace Examen_Equipo
 {
     internal class Datos
     {
-        String cadenaConexion = @"Data Source=MELARGUMEDO;
+        String cadenaConexion = @"Data Source=VANESSAGZZ;
             Integrated Security=true;initial catalog=Northwind";
 
         SqlConnection conexion;

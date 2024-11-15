@@ -54,8 +54,14 @@ namespace Examen_Equipo
         private void demografiaDelClienteToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             frmDemografiaCliente demografiaCliente = new frmDemografiaCliente();
-                demografiaCliente.Show();
+            demografiaCliente.Show();
 
+        }
+
+        private void transportistasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Transportistas transportistas = new Transportistas();
+            transportistas.Show();
         }
     }
 }
