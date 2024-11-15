@@ -34,6 +34,7 @@ namespace Examen_Equipo
             txtCountry.Text = country;
             mtbPhone.Text = phone;
             mtbFax.Text = fax;
+            bandera = true; 
 
         }
 
@@ -50,7 +51,7 @@ namespace Examen_Equipo
                 {
                     bool j = datos.ejecutar("Update Customers Set companyname='" + txtCompanyName.Text +
                         "',contactname='" + txtContactName.Text + "',contacttitle='" + txtContactTitle.Text +
-                        "',address='" + txtAddress + "',city='" + txtCity.Text + "',region='" + txtRegion +
+                        "',address='" + txtAddress.Text + "',city='" + txtCity.Text + "',region='" + txtRegion.Text +
                         "',postalcode='" + txtPostalCode.Text + "',country='" +
                         txtCountry.Text + "',phone='" + mtbPhone.Text + "',fax='" + mtbFax.Text + "'Where customerid=" + mtbCustumerId.Text);
 

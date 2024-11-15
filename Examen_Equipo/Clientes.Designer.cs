@@ -68,7 +68,7 @@
             tabControl1.Location = new Point(12, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(681, 387);
+            tabControl1.Size = new Size(838, 387);
             tabControl1.TabIndex = 0;
             // 
             // tpAlta
@@ -99,7 +99,7 @@
             tpAlta.Location = new Point(4, 24);
             tpAlta.Name = "tpAlta";
             tpAlta.Padding = new Padding(3);
-            tpAlta.Size = new Size(673, 359);
+            tpAlta.Size = new Size(830, 359);
             tpAlta.TabIndex = 0;
             tpAlta.Text = "Alta";
             tpAlta.UseVisualStyleBackColor = true;
@@ -299,7 +299,7 @@
             tpMostrar.Location = new Point(4, 24);
             tpMostrar.Name = "tpMostrar";
             tpMostrar.Padding = new Padding(3);
-            tpMostrar.Size = new Size(673, 359);
+            tpMostrar.Size = new Size(830, 359);
             tpMostrar.TabIndex = 1;
             tpMostrar.Text = "Mostrar";
             tpMostrar.UseVisualStyleBackColor = true;
@@ -317,7 +317,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(596, 450);
+            ClientSize = new Size(862, 450);
             Controls.Add(tabControl1);
             Name = "Clientes";
             Text = "Clientes";

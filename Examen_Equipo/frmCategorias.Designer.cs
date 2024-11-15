@@ -30,13 +30,14 @@
         {
             tabControl1 = new TabControl();
             tpAlta = new TabPage();
+            txtCategoryName = new TextBox();
             label3 = new Label();
             label2 = new Label();
             txtDescripcion = new TextBox();
             label1 = new Label();
             tpMostrar = new TabPage();
             dgvCategories = new DataGridView();
-            txtCategoryName = new TextBox();
+            btnAceptar = new Button();
             tabControl1.SuspendLayout();
             tpAlta.SuspendLayout();
             tpMostrar.SuspendLayout();
@@ -55,6 +56,7 @@
             // 
             // tpAlta
             // 
+            tpAlta.Controls.Add(btnAceptar);
             tpAlta.Controls.Add(txtCategoryName);
             tpAlta.Controls.Add(label3);
             tpAlta.Controls.Add(label2);
@@ -67,6 +69,13 @@
             tpAlta.TabIndex = 0;
             tpAlta.Text = "Alta";
             tpAlta.UseVisualStyleBackColor = true;
+            // 
+            // txtCategoryName
+            // 
+            txtCategoryName.Location = new Point(21, 53);
+            txtCategoryName.Name = "txtCategoryName";
+            txtCategoryName.Size = new Size(100, 23);
+            txtCategoryName.TabIndex = 4;
             // 
             // label3
             // 
@@ -116,18 +125,21 @@
             // dgvCategories
             // 
             dgvCategories.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCategories.Location = new Point(32, 26);
+            dgvCategories.Location = new Point(6, 20);
             dgvCategories.Name = "dgvCategories";
             dgvCategories.Size = new Size(624, 150);
             dgvCategories.TabIndex = 0;
             dgvCategories.CellContentClick += dgvCategories_CellContentClick;
             // 
-            // txtCategoryName
+            // btnAceptar
             // 
-            txtCategoryName.Location = new Point(21, 53);
-            txtCategoryName.Name = "txtCategoryName";
-            txtCategoryName.Size = new Size(100, 23);
-            txtCategoryName.TabIndex = 4;
+            btnAceptar.Location = new Point(313, 162);
+            btnAceptar.Name = "btnAceptar";
+            btnAceptar.Size = new Size(75, 23);
+            btnAceptar.TabIndex = 5;
+            btnAceptar.Text = "Aceptar";
+            btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // frmCategorias
             // 
@@ -158,5 +170,6 @@
         private Label label3;
         private Label label2;
         private TextBox txtCategoryName;
+        private Button btnAceptar;
     }
 }

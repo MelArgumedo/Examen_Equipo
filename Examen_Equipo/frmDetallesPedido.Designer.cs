@@ -31,10 +31,14 @@
             tabControl1 = new TabControl();
             tpAlta = new TabPage();
             tpMostrar = new TabPage();
-            dgv = new DataGridView();
+            dgvOrderDetails = new DataGridView();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             tabControl1.SuspendLayout();
+            tpAlta.SuspendLayout();
             tpMostrar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgv).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvOrderDetails).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -49,17 +53,20 @@
             // 
             // tpAlta
             // 
+            tpAlta.Controls.Add(label3);
+            tpAlta.Controls.Add(label2);
+            tpAlta.Controls.Add(label1);
             tpAlta.Location = new Point(4, 24);
             tpAlta.Name = "tpAlta";
             tpAlta.Padding = new Padding(3);
-            tpAlta.Size = new Size(435, 226);
+            tpAlta.Size = new Size(505, 254);
             tpAlta.TabIndex = 0;
             tpAlta.Text = "Alta";
             tpAlta.UseVisualStyleBackColor = true;
             // 
             // tpMostrar
             // 
-            tpMostrar.Controls.Add(dgv);
+            tpMostrar.Controls.Add(dgvOrderDetails);
             tpMostrar.Location = new Point(4, 24);
             tpMostrar.Name = "tpMostrar";
             tpMostrar.Padding = new Padding(3);
@@ -68,13 +75,40 @@
             tpMostrar.Text = "Mostrar";
             tpMostrar.UseVisualStyleBackColor = true;
             // 
-            // dgv
+            // dgvOrderDetails
             // 
-            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv.Location = new Point(30, 57);
-            dgv.Name = "dgv";
-            dgv.Size = new Size(448, 176);
-            dgv.TabIndex = 0;
+            dgvOrderDetails.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvOrderDetails.Location = new Point(30, 57);
+            dgvOrderDetails.Name = "dgvOrderDetails";
+            dgvOrderDetails.Size = new Size(448, 176);
+            dgvOrderDetails.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(37, 45);
+            label1.Name = "label1";
+            label1.Size = new Size(85, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Precio Unitario";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(37, 103);
+            label2.Name = "label2";
+            label2.Size = new Size(55, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Cantidad";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(37, 162);
+            label3.Name = "label3";
+            label3.Size = new Size(63, 15);
+            label3.TabIndex = 2;
+            label3.Text = "Descuento";
             // 
             // frmDetallesPedido
             // 
@@ -85,8 +119,10 @@
             Name = "frmDetallesPedido";
             Text = "frmDetallesPedido";
             tabControl1.ResumeLayout(false);
+            tpAlta.ResumeLayout(false);
+            tpAlta.PerformLayout();
             tpMostrar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgv).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvOrderDetails).EndInit();
             ResumeLayout(false);
         }
 
@@ -95,6 +131,9 @@
         private TabControl tabControl1;
         private TabPage tpAlta;
         private TabPage tpMostrar;
-        private DataGridView dgv;
+        private DataGridView dgvOrderDetails;
+        private Label label1;
+        private Label label3;
+        private Label label2;
     }
 }

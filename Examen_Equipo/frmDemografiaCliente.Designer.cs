@@ -31,10 +31,13 @@
             tabControl1 = new TabControl();
             tpAlta = new TabPage();
             tpMostrar = new TabPage();
-            dgv = new DataGridView();
+            dgvCustomerDemographics = new DataGridView();
+            txtDescripcionCliente = new TextBox();
+            label2 = new Label();
             tabControl1.SuspendLayout();
+            tpAlta.SuspendLayout();
             tpMostrar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgv).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCustomerDemographics).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -49,6 +52,8 @@
             // 
             // tpAlta
             // 
+            tpAlta.Controls.Add(txtDescripcionCliente);
+            tpAlta.Controls.Add(label2);
             tpAlta.Location = new Point(4, 24);
             tpAlta.Name = "tpAlta";
             tpAlta.Padding = new Padding(3);
@@ -59,7 +64,7 @@
             // 
             // tpMostrar
             // 
-            tpMostrar.Controls.Add(dgv);
+            tpMostrar.Controls.Add(dgvCustomerDemographics);
             tpMostrar.Location = new Point(4, 24);
             tpMostrar.Name = "tpMostrar";
             tpMostrar.Padding = new Padding(3);
@@ -68,13 +73,29 @@
             tpMostrar.Text = "Mostrar";
             tpMostrar.UseVisualStyleBackColor = true;
             // 
-            // dgv
+            // dgvCustomerDemographics
             // 
-            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv.Location = new Point(30, 31);
-            dgv.Name = "dgv";
-            dgv.Size = new Size(453, 166);
-            dgv.TabIndex = 0;
+            dgvCustomerDemographics.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCustomerDemographics.Location = new Point(26, 41);
+            dgvCustomerDemographics.Name = "dgvCustomerDemographics";
+            dgvCustomerDemographics.Size = new Size(453, 166);
+            dgvCustomerDemographics.TabIndex = 0;
+            // 
+            // txtDescripcionCliente
+            // 
+            txtDescripcionCliente.Location = new Point(15, 54);
+            txtDescripcionCliente.Name = "txtDescripcionCliente";
+            txtDescripcionCliente.Size = new Size(100, 23);
+            txtDescripcionCliente.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(15, 36);
+            label2.Name = "label2";
+            label2.Size = new Size(126, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Descripcion del cliente";
             // 
             // frmDemografiaCliente
             // 
@@ -85,8 +106,10 @@
             Name = "frmDemografiaCliente";
             Text = "frmDemografiaCliente";
             tabControl1.ResumeLayout(false);
+            tpAlta.ResumeLayout(false);
+            tpAlta.PerformLayout();
             tpMostrar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgv).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCustomerDemographics).EndInit();
             ResumeLayout(false);
         }
 
@@ -95,6 +118,8 @@
         private TabControl tabControl1;
         private TabPage tpAlta;
         private TabPage tpMostrar;
-        private DataGridView dgv;
+        private DataGridView dgvCustomerDemographics;
+        private TextBox txtDescripcionCliente;
+        private Label label2;
     }
 }

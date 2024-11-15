@@ -136,6 +136,7 @@
             empleadoToolStripMenuItem2.Name = "empleadoToolStripMenuItem2";
             empleadoToolStripMenuItem2.Size = new Size(216, 22);
             empleadoToolStripMenuItem2.Text = "Empleado";
+            empleadoToolStripMenuItem2.Click += empleadoToolStripMenuItem2_Click;
             // 
             // territorioDeLosEmpleadosToolStripMenuItem2
             // 

@@ -12,7 +12,7 @@ namespace Examen_Equipo
 {
     public partial class frmCategorias : Form
     {
-
+        int categoryid;
         bool bandera = false;
 
 
@@ -21,6 +21,7 @@ namespace Examen_Equipo
         {
             InitializeComponent();
         }
+
 
 
         private void ActualizarGrid()
@@ -44,6 +45,11 @@ namespace Examen_Equipo
         }
 
         private void frmCategorias_Activated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
 
         }
