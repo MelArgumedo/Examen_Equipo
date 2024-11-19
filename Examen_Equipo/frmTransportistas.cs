@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Examen_Equipo
 {
-    public partial class Transportistas : Form
+    public partial class frmTransportistas : Form
     {
         bool bandera = false;
         int ShipperID;
         Datos datos = new Datos();
-        public Transportistas()
+        public frmTransportistas()
         {
             InitializeComponent();
         }
-        public Transportistas(string ShipperID,string companyname, string phone)
+        public frmTransportistas(string ShipperID,string companyname, string phone)
         {
             InitializeComponent();
             this.ShipperID = Convert.ToInt32(ShipperID);
@@ -58,7 +58,7 @@ namespace Examen_Equipo
             {
                 if (bandera == true)
                 {
-                    bool j = datos.ejecutar("Update Shippers Set CompanyName ='" + cmbCompanyName.Text + "',Phone" + mktPhone.Text + "' Where ShipperID=" + ShipperID);
+                    bool j = datos.ejecutar("Update Shippers Set CompanyName ='" + cmbCompanyName.Text + "',Phone='" + mktPhone.Text + "',Where ShipperID=" + ShipperID);
                     if (j == true)
                     {
                         MessageBox.Show("Datos Actualizados", "Sistema", MessageBoxButtons.OK,
