@@ -64,5 +64,11 @@ namespace Examen_Equipo
             empleados.Show();
 
         }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProveedores Proveedores = new frmProveedores();
+            Proveedores.Show();
+        }
     }
 }
