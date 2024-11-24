@@ -68,6 +68,7 @@
             regionToolStripMenuItem = new ToolStripMenuItem();
             transportistasToolStripMenuItem1 = new ToolStripMenuItem();
             toolStripMenuItem3 = new ToolStripMenuItem();
+            salirToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -82,9 +83,11 @@
             // 
             // archivoToolStripMenuItem
             // 
+            archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { salirToolStripMenuItem });
             archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             archivoToolStripMenuItem.Size = new Size(60, 20);
             archivoToolStripMenuItem.Text = "Archivo";
+            archivoToolStripMenuItem.Click += archivoToolStripMenuItem_Click;
             // 
             // toolStripMenuItem2
             // 
@@ -321,6 +324,13 @@
             toolStripMenuItem3.Name = "toolStripMenuItem3";
             toolStripMenuItem3.Size = new Size(216, 22);
             // 
+            // salirToolStripMenuItem
+            // 
+            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            salirToolStripMenuItem.Size = new Size(180, 22);
+            salirToolStripMenuItem.Text = "Salir";
+            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -379,5 +389,6 @@
         private ToolStripMenuItem transportistasToolStripMenuItem2;
         private ToolStripMenuItem proveedoresToolStripMenuItem;
         private ToolStripMenuItem territoriosToolStripMenuItem;
+        private ToolStripMenuItem salirToolStripMenuItem;
     }
 }
